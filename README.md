@@ -6,4 +6,6 @@ npm install
 npm run serve
 ```
 
-## 运行概况，目前只做到了第二个热门榜单的页面，“我的”界面等待更新加入
+## 运行概况，目前只做到了第二个热门榜单的页面，后续功能再加入
+https://github.com/zhifanXU17/vue-movie/tree/master/img/movie-1.png
+https://github.com/zhifanXU17/vue-movie/tree/master/img/movie-2.png
