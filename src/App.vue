@@ -16,7 +16,7 @@
         <span>电影仓库</span>
         <v-icon>mdi-movie-search-outline</v-icon>
       </v-btn>
-      <v-btn value="shownMovie" to="shownMovie">
+      <v-btn value="shownMovie" to="/shownMovie">
         <span>热映电影</span>
         <v-icon>mdi-movie-filter-outline</v-icon>
       </v-btn>
