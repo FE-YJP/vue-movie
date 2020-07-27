@@ -1,24 +1,9 @@
 # movie
 
-## Project setup
+## 使用以下两个npm命令即刻运行查看项目概况
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 运行概况，目前只做到了第二个热门榜单的页面，“我的”界面等待更新加入
