@@ -26,3 +26,6 @@ npm run serve
   <img width="350" height="600" src="https://github.com/zhifanXU17/vue-movie/blob/master/img/movie-1.png"/>
   <img width="350" height="600" src="https://github.com/zhifanXU17/vue-movie/blob/master/img/movie-2.png"/>
 </div>
+
+## 具体豆瓣API可查看这个文档
+[豆瓣API文档](https://github.com/kaina404/FlutterDouBan/blob/master-new/DoubanAPI.md)
