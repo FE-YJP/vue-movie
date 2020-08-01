@@ -1,24 +1,31 @@
-# movie
+# 电影频道
 
-## Project setup
+## 使用以下两个npm命令即刻运行查看项目概况
 ```
 npm install
-```
-
-### Compiles and hot-reloads for development
-```
 npm run serve
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 功能清单
+**首页** <br>
+- [ ] 搜索电影 <br>
+- [x] 豆瓣top50展示 <br>
 
-### Lints and fixes files
-```
-npm run lint
-```
+**热映榜单** <br>
+- [ ] 用户定位城市 <br>
+- [x] 北美热映票房榜单 <br>
+- [ ] 用户定位城市热映票房榜单 <br>
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+**我的** <br>
+- [ ] 个人信息 <br>
+- [ ] 收藏电影 <br>
+- [ ] 看过的电影 <br>
+
+## 项目目前运行概况，做到了第二个热门榜单的页面，后续功能再添加补充
+<div>
+  <img width="350" height="600" src="https://github.com/zhifanXU17/vue-movie/blob/master/img/movie-1.png"/>
+  <img width="350" height="600" src="https://github.com/zhifanXU17/vue-movie/blob/master/img/movie-2.png"/>
+</div>
+
+## 具体豆瓣API可查看这个文档
+[豆瓣API文档](https://github.com/kaina404/FlutterDouBan/blob/master-new/DoubanAPI.md)
