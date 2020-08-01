@@ -31,6 +31,14 @@ module.exports = {
         pathRewrite: {
           "^/UShotMovieApi": ""
         }
+      },
+      '/citiesApi': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        ws: true,
+        pathRewrite: {
+          '^/citiesApi': '/'
+        }
       }
     }
   }

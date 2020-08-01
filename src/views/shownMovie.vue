@@ -5,9 +5,9 @@
       <v-app-bar-nav-icon/>
       <v-toolbar-title>热映电影</v-toolbar-title>
       <v-spacer/>
-      <v-btn text>
+      <v-btn text to="/city">
         <v-icon>mdi-map-marker</v-icon>
-        揭阳
+        <span v-text="lastCity"></span>
       </v-btn>
     </v-toolbar>
 
@@ -35,18 +35,22 @@
 
 <script>
 	import axios from 'axios'
+  import { mapState } from 'vuex'
 
 	export default {
 		name: "OnViewMovie",
 		data () {
 			return {
 				time: '',  //  当前时间
-				city: '',  // 当前定位城市
+				lastCity: '',  // 当前定位城市
         hotMovie: {}, //  当前大陆热播电影榜单
         usHotMovie: null, // 当前欧美热映电影榜单
-        usHotMovieUpdateTime: ''  // 当前欧美热映电影榜单更新时间
+        usHotMovieUpdateTime: '',  // 当前欧美热映电影榜单更新时间
 			}
 		},
+    computed: {
+      ...mapState(['city'])
+    },
 		methods: {
       usHotMovieInformation: function () {
         let results = []
@@ -101,7 +105,12 @@
 			this.getLocalDate()
 			this.getShownMovie()
       this.getUShotMovie()
-		}
+		},
+    activated () {
+      if (this.lastCity !== this.city) {
+        this.lastCity = this.city
+      }
+    }
 	}
 </script>
 
