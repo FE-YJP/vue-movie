@@ -10,14 +10,10 @@
         <div class="movieItemInformation">
           <div class="rating">
             <v-rating
-                background-color="orange"
-                color="orange lighten-3"
-                small
-                dense
-                half-increments
-                :value=movieRating(item)
-                readonly
-                class="movieItemRating"
+              background-color="orange"
+              color="orange lighten-3" small dense half-increments readonly
+              :value=movieRating(item)
+              class="movieItemRating"
             />
             <span>{{ item.rating.average }}</span>
           </div>
@@ -27,7 +23,6 @@
             <p v-for="name of actorsName(item)" v-text="name.name" :key="name.id" class="actorsName"></p>
         </div>
       </div>
-
 
       <img :src="movieImg(item)" referrerpolicy="no-referrer" class="movieItemRight" alt="">
     </v-card>

@@ -24,12 +24,12 @@
 		methods: {
 			getMovieListData: function () {
 				this.axios.get('/top250api')
-						.then((response) => {
-							this.allMoviesInformation = response.data
-						})
-						.catch(reason => {
-							console.log(reason)
-						})
+          .then((response) => {
+            this.allMoviesInformation = response.data
+          })
+          .catch(reason => {
+            console.log(reason)
+          })
 			}
 		},
 		created() {
